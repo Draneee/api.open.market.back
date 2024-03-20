@@ -1,5 +1,5 @@
 ## .ENV Variables Obligatories
-```bash
+```js
 DATABASE_URL="postgresql://postgres:Aa49694941.@localhost:5432/openMarket?schema=public" // url of conection db (postgresql)
 JWT_SECRET="secretKey" 
 JWT_EXPIRES_IN="1h" // expiration time of jwt
