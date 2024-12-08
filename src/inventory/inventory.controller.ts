@@ -71,6 +71,7 @@ export class InventoryController {
     @Query('skip') skip: number = 0,
     @Query('limit') limit: number = 12,
   ) {
+    console.log(req);
     const [inventory, total] =
       await this.Inventory.getInventoryUserWithPagination(
         req.user.id,

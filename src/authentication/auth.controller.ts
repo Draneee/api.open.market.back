@@ -26,6 +26,7 @@ export class AuthController {
   ): Promise<any> {
     try {
       const result = await this.authService.login(loginDto);
+      console.log(result);
       return response.status(200).json({
         status: 'Ok!',
         message: 'Successfully login!',
